@@ -1,0 +1,36 @@
+void setup() {
+RGB.control(true)
+particle.function("led1",led");
+
+}
+
+void loop() {
+
+}
+
+int led string(color){
+    int value =0;
+    // LED gives out red color
+    if (color == "red"){
+        for( value=0; value<256; value++){
+            RGB.color(value,0,0);
+            delay (5);
+        }
+    }
+    // LED gives out blue color
+    
+     if (color == "blue"){
+        for( value=0; value<256; value++){
+            RGB.color(0,value,0);
+            delay (5);
+        }
+    }
+    
+    // LED gives out green color
+     if (color == "green"){
+        for( value=0; value<256; value++){
+            RGB.color(0,0,value);
+            delay (5);
+        }
+    }
+}
